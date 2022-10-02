@@ -120,7 +120,7 @@ Must have a professional README (unique name, description, link to the deployed 
 
 
 
-<img src="./Assets/images/success_page.png">
+<img src="./Assets/images/success+page.png">
 
 
 
