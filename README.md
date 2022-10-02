@@ -88,8 +88,15 @@ Must have a professional README (unique name, description, link to the deployed 
 
 
 
-# App Github Deploy Link
+# App Github Repository Link
 
+https://github.com/Trebligony/Event-Funding-App
+
+
+
+# App Heroku Deploy Link
+
+https://events-funding-app.herokuapp.com/
 
 
 
