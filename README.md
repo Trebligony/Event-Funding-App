@@ -83,7 +83,11 @@ Must have a professional README (unique name, description, link to the deployed 
 
 
 
+
+
 ### Link to walkthrough video (YouTube)
+
+
 
 
 
@@ -102,5 +106,3 @@ https://events-funding-app.herokuapp.com/
 
 
 
-
-# App Heroku Deploy Link
