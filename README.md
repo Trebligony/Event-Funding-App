@@ -1,4 +1,4 @@
-# Project Two: Events Funding App
+# Events Funding App
 
 The task is to build a full-stack one stop marketplace app for event engineering, planning and execution using using Node.js, Express.js, Sequelize, Handlebars.js, and MVC architecture.
 
@@ -137,6 +137,7 @@ Must have a professional README (unique name, description, link to the deployed 
 
 
 https://github.com/Trebligony/Event-Funding-App
+
 
 
 
