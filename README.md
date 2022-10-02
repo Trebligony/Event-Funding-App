@@ -83,7 +83,45 @@ Must have a professional README (unique name, description, link to the deployed 
 
 
 
+
 <img src="./Assets/images/homepage.png">
+
+
+
+
+
+<img src="./Assets/images/login_page.png">
+
+
+
+
+
+<img src="./Assets/images/profile_page.png">
+
+
+
+
+
+<img src="./Assets/images/new_project_page.png">
+
+
+
+
+
+<img src="./Assets/images/fund_project_page.png">
+
+
+
+
+
+<img src="./Assets/images/payment_validation_page.png">
+
+
+
+
+
+<img src="./Assets/images/success_page.png">
+
 
 
 
