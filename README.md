@@ -83,18 +83,20 @@ Must have a professional README (unique name, description, link to the deployed 
 
 
 
-# Link to walkthrough video (YouTube)
+### Link to walkthrough video (YouTube)
 
 
 
 
-# App Github Repository Link
+### App Github Repository Link
+
 
 https://github.com/Trebligony/Event-Funding-App
 
 
 
-# App Heroku Deploy Link
+### App Heroku Deploy Link
+
 
 https://events-funding-app.herokuapp.com/
 
