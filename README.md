@@ -83,6 +83,9 @@ Must have a professional README (unique name, description, link to the deployed 
 
 
 
+<img src="./Assets/images/homepage.png">
+
+
 
 
 ### Link to walkthrough video (YouTube)
