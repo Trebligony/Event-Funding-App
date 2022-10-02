@@ -1,4 +1,4 @@
-const stripe = Stripe('Your Publishable key');
+const stripe = Stripe('51JnVfSLXAsGDq88XFmLiGMRnJ5Xd46vBik73xwV2htlyPPReNmBZiIIeEIeSdNkdo41qAbkyLOidbx7hi4Sohhjy00MqbC6aYV');
 const elements = stripe.elements();
 
 var style = {
