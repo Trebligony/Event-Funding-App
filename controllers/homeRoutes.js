@@ -100,11 +100,17 @@ router.post('/payment', (req, res) => {
 })
 
 router.get('/donate', (req, res) => {
-  res.render('donate');
+  const amount = req.query.amount;
+  res.render('donate', { 
+    donation_amt: amount,
+    logged_in: req.session.logged_in
+  });
 });
 
 router.get('/success', (req, res) => {
-  res.render('success');
+  res.render('success', { 
+    logged_in: req.session.logged_in
+  });
 });
 
 
