@@ -1,56 +1,84 @@
-<div class="blog-detail-part paddingub">
-  <div class="container img-box">
-    <div class="detail-part">
-      <h2 class="title-two">Welcome, {{name}}</h2>
-      <div class="blog-sec-line"></div>
-      {{#if projects.length}}
-      <div class="comments-part">
-        <h3 class="com-head-three">Current Projects</h3>
-        <div class="about-service  text-center">
-          <div class="container">
-            <div class="row project-list">
-              {{#each projects as |project|}}
-
-
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="about-serv-detail">
-                  <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4><br>
-                  <a href="" id="logout"><button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button></a> 
-                </div>
-
-              </div>
-
-              {{/each}}
-            </div>
+<!-- Get in Touch-->
+<section class="section section-lg bg-gray-100" id="contact-us">
+  <div class="container">
+    <h2 class="font-weight-bold text-primary text-center">Welcome, {{name}}!</h2><br>
+    <hr>
+    <h3 class="font-weight-bold text-primary">Create an Event</h3>
+    <!-- RD Mailform-->
+    <form class="rd-form rd-mailform form-lg new-project-form">
+      <div class="row row-30">
+        <div class="col-lg-4">
+          <div class="form-wrap form-wrap-icon">
+            <input class="form-input" id="project-name" name="project-name" type="text" data-constraints="@Required">
+            <label class="form-label" for="project-name">Event Title</label>
+            <div class="icon form-icon mdi mdi-camera-iris text-primary"></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-wrap form-wrap-icon">
+            <select class="form-input select" id="project-type" name="project-type">
+              <option disabled selected>Select event type</option>
+              <option value="Corporate">Corporate</option>
+              <option value="Conference">Conference</option>
+              <option value="Trade Shows">Trade Show</option>
+              <option value="Party">Party</option>
+              <option value="Birthday">Birthday</option>
+              <option value="Wedding">Wedding</option>
+              <option value="Engagement">Engagement</option>
+            </select>
+            <div class="icon form-icon mdi mdi-blur-linear text-primary"></div>
           </div>
         </div>
 
-      </div>
-
-      <div class="blog-sec-line"></div>
-      {{/if}}
-      <div class="comm-form">
-        <h3 class="comm-head-three">Create a New Project</h3>
-        <form class="form new-project-form">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <input type="text" id="project-name" name="project-name" class="form-control" placeholder="Project Name">
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <input type="number" id="project-funding" name="project-funding" class="form-control"
-                placeholder="Needed funding ($)">
-            </div>
+        <div class="col-lg-4">
+          <div class="form-wrap form-wrap-icon">
+            <input class="form-input" id="project-funding" name="project-funding" type="number"
+              data-constraints="@Required">
+            <label class="form-label" for="project-funding">Needed funding ($):</label>
+            <div class="icon form-icon mdi mdi-currency-usd text-primary"></div>
           </div>
-          <div class="form-group">
-            <textarea id="project-desc" name="project-desc" class="form-control" rows="6"
-              placeholder="Description"></textarea>
+        </div>
+        <div class="col-12">
+          <div class="form-wrap form-wrap-icon">
+            <label class="form-label" for="project-desc">Description</label>
+            <textarea class="form-input" id="project-desc" name="project-desc" data-constraints="@Required"></textarea>
+            <div class="icon form-icon mdi mdi-forum text-primary"></div>
           </div>
-          <button class="btn submit-comment" type="submit">CREATE</button>
-        </form>
+        </div>
       </div>
+      <div class="form-wrap form-wrap-button">
+        <button class="button button-lg button-icon button-icon-left button-primary" type="submit"><span
+            class="icon mdi mdi-pencil"></span>Create</button>
+      </div>
+    </form>
+  </div>
+</section>
 
+
+{{#if projects.length}}
+<!--Our Event Packages-->
+<section class="section section-lg bg-image project-list" style="background-image: url(/images/price-bg-1921x772.jpg);">
+  <div class="container">
+    <h2 class="font-weight-bold text-white text-center wow fadeIn">Events created by {{name}}</h2>
+    <div class="row row-30 mt-60">
+
+      {{#each projects as |project|}}
+      <div class="col-sm-6 col-lg-3 wow fadeInRight" data-wow-delay=".4s">
+        <div class="price-block">
+          <div class="price-block-header">
+            <h4>{{project.etype}}</h4>
+          </div>
+          <div class="price-block-body">
+            <h6 class="text-primary"><a href="/project/{{project.id}}">{{project.name}}</a></h6><br>
+            <a href=""><button class="button button-sm-2 button-default-outline font-weight-bold" data-id="{{project.id}}">DELETE</button></a> 
+          </div>
+        </div>
+      </div>
+      {{/each}}
 
     </div>
   </div>
-</div>
+</section>
+{{/if}}
+
 <script src="./js/profile.js"></script>

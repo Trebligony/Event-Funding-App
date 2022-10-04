@@ -1,25 +1,31 @@
-<div class="cause-detail pr-100 paddingub">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-10 col-md-10">
-        <h2 class="cause-head-two">{{name}}</h2>
-        <div class="text">
-          <p>{{description}}</p></br>
-        </div>
-        <div class="raised float-left">
-          <h3 class="cause-head-three">Created by <b>{{user.name}} </b>on {{format_date date_created}}</h3>
-        </div>
-        <div class="raised float-right">
-          <h3 class="cause-head-three"><b>Need:</b> <span for="img" aria-label="money">💲{{format_amount needed_funding}}</span></h3>
+<!-- Why Travel with Sunway?-->
+<section class="section bg-gray-100" id="our-team">
+  <div class="range">
+    <div class="cell-lg-7 cell-xl-8 cell-xxl-9">
+      <div class="cell-inner section-lg text-center text-sm-left">
+        <h2 class="font-weight-bold text-primary wow fadeIn" data-wow-delay=".1s">{{name}}</h2>
+        <p class="wow fadeIn" data-wow-delay=".2s">{{description}}</p></br>
+        <p class="heading-5">Created by <span class="font-weight-bold text-primary">{{user.name}}</span> on
+          <b>{{format_date date_created}}</b></p>
+        <!-- Owl Carousel-->
+        <div class="owl-carousel owl-1 mt-lg-50" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="2"
+          data-xl-items="3" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="false" data-margin="30"
+          data-mouse-drag="false">
+          <!-- Profile Classic-->
+          <article class="profile-classic wow fadeIn" data-wow-delay=".3s">
+            <div class="profile-classic-main">
+              <p class="heading-6 font-base ls-3 font-weight-regular">Required Fund</p>
+              <p class="profile-classic-name heading-4">$USD {{format_amount needed_funding}}
+              </p>
+              <a href="/donate?amount={{needed_funding}}" type="submit" class="button button-lg button-icon button-icon-left button-primary"><span
+                  class="icon mdi mdi-chevron-double-right"></span>Fund Now</a>
+            </div>
+          </article>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-2 col-md-2">
-        <div>
-          <a href="/donate" type="submit" class="donate">Fund this Project</a>
-        </div>
-      </div>
-      <div class="bord"></div>
     </div>
-
+    <div class="cell-lg-5 cell-xl-4 cell-xxl-3 height-fill">
+      <div class="box-3 bg-image" style="background-image: url(/images/about-2.jpg);"></div>
+    </div>
   </div>
-</div>
+</section>
