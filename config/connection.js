@@ -4,13 +4,15 @@ require('dotenv').config();
 let sequelize;
 
 if (process.env.JAWSDB_URL) {
-  sequelize = new Sequelize(process.env.JAWSDB_URL, {dialectOptions: {
-    ssl: {
+  sequelize = new Sequelize(process.env.JAWSDB_URL, {
+    dialectOptions: {
+      ssl: {
         rejectUnauthorized: false
+      }
     }
-}});
-  
-} 
+  });
+
+}
 else {
   sequelize = new Sequelize(
     process.env.DB_NAME,
