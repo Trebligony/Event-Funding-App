@@ -126,7 +126,7 @@ Must have a professional README (unique name, description, link to the deployed 
 
 
 
-### Link to walkthrough video (YouTube)
+### Link to elevator pitch (YouTube)
 
 https://www.youtube.com/watch?v=oEjAeOjo0c0
 
