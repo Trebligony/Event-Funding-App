@@ -1,6 +1,6 @@
 # Events Funding App
 
-The task is to build a full-stack one stop marketplace app for event engineering, planning and execution using using Node.js, Express.js, Sequelize, Handlebars.js, and MVC architecture.
+The task is to build a full-stack one stop marketplace app for event engineering, planning and execution using Node.js, Express.js, Sequelize, Handlebars.js, and MVC architecture.
 
 ##Coding requirements
 
