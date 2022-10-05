@@ -23,3 +23,5 @@ const seedDatabase = async () => {
 };
 
 seedDatabase();
+
+// adds the starter accounts and projects to the database
