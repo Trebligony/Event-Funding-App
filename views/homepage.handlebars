@@ -1,0 +1,35 @@
+<div class="recent-causes-part paddingub">
+  <div class="container">
+    <div class="causes-content text-center">
+      <h2 class="section-title">Recent Projects</h2>
+    </div>
+    <div class="col-xs-12">
+      <div class="recent-causes-slider" id="recent-causes">
+        <!-- Loop over each object in the projects array -->
+        {{#each projects as |project| }}
+        <div class="item">
+          <div class="cause-detail">
+            <h3> {{{get_emoji}}}<a class="causes-title" href="/project/{{project.id}}">{{project.name}}</a></h3>
+
+            <div class="progress inline">
+              <div class="progress-bar position-r" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p class="section-detail">{{project.description}}</p>
+            <div class="raised">
+              <p class="pay-label mb-2">Need : <span for="img" aria-label="money">💲</span><span
+                  class="money">{{format_amount project.needed_funding}}</span></p>
+            </div>
+            <div class="raised">
+              <p class="pay-label mb-2">Created by : <span class="money">{{project.user.name}} </span></p>
+            </div>
+            <div class="raised">
+              <p class="pay-label mb-2">Raised on : <span class="money">{{format_date project.date_created}} </span></p>
+            </div>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>

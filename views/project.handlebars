@@ -1,0 +1,25 @@
+<div class="cause-detail pr-100 paddingub">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-10">
+        <h2 class="cause-head-two">{{name}}</h2>
+        <div class="text">
+          <p>{{description}}</p></br>
+        </div>
+        <div class="raised float-left">
+          <h3 class="cause-head-three">Created by <b>{{user.name}} </b>on {{format_date date_created}}</h3>
+        </div>
+        <div class="raised float-right">
+          <h3 class="cause-head-three"><b>Need:</b> <span for="img" aria-label="money">💲{{format_amount needed_funding}}</span></h3>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-2 col-md-2">
+        <div>
+          <a href="/donate" type="submit" class="donate">Fund this Project</a>
+        </div>
+      </div>
+      <div class="bord"></div>
+    </div>
+
+  </div>
+</div>
