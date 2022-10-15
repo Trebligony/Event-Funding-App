@@ -1,6 +1,6 @@
 # Events Funding App
 
-The task is to build a full-stack one stop marketplace app for event engineering, planning and execution using using Node.js, Express.js, Sequelize, Handlebars.js, and MVC architecture.
+The task is to build a full-stack one stop marketplace app for event engineering, planning and execution using Node.js, Express.js, Sequelize, Handlebars.js, and MVC architecture.
 
 ##Coding requirements
 
@@ -126,8 +126,9 @@ Must have a professional README (unique name, description, link to the deployed 
 
 
 
-### Link to walkthrough video (YouTube)
+### Link to elevator pitch (YouTube)
 
+https://www.youtube.com/watch?v=oEjAeOjo0c0
 
 
 
@@ -147,4 +148,10 @@ https://github.com/Trebligony/Event-Funding-App
 https://events-funding-app.herokuapp.com/
 
 
+## References 
+
+https://livedemo00.template-help.com/wt_prod-25530/#
+
+
+https://stripe.com/docs/api/payment_methods
 
