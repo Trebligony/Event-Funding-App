@@ -84,44 +84,31 @@ Must have a professional README (unique name, description, link to the deployed 
 
 
 
-<img src="./Assets/images/homepage.png">
+<img src="./Assets/images/Sign%20in:create%20account.png">
 
 
 
 
 
-<img src="./Assets/images/login_page.png">
+<img src="./Assets/images/Recent%20projects.png">
 
 
 
 
 
-<img src="./Assets/images/profile_page.png">
+<img src="./Assets/images/payment%20page.png">
 
 
 
 
 
-<img src="./Assets/images/new_project_page.png">
+<img src="./Assets/images/Expanded%20Event.png">
 
 
 
 
 
-<img src="./Assets/images/fund_project_page.png">
-
-
-
-
-
-<img src="./Assets/images/payment_validation_page.png">
-
-
-
-
-
-<img src="./Assets/images/success+page.png">
-
+<img src="./Assets/images/Create%20project%20page.png">
 
 
 
