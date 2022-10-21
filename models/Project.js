@@ -15,10 +15,6 @@ Project.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    etype: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     description: {
       type: DataTypes.STRING,
     },
