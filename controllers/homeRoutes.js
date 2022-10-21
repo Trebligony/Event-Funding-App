@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Project, User } = require('../models');
 const withAuth = require('../utils/auth');
+const stripe = require('stripe')(process.env.SECRETKEY)
 
 router.get('/', async (req, res) => {
   try {
@@ -78,5 +79,33 @@ router.get('/login', (req, res) => {
 
   res.render('login');
 });
+
+
+
+//Stripe Code
+router.post('/payment', (req, res) => {
+  try {
+      stripe.customers.create({
+          name: req.body.name,
+          email: req.body.email,
+          source: req.body.stripeToken
+      }).then(customer => stripe.charges.create({
+          amount: req.body.amount * 100,
+          currency: 'usd',
+          customer: customer.id,
+          description: 'Thank you for your generous donation.'
+      })).then(() => res.render('success'))
+          .catch(err => console.log(err))
+  } catch (err) { res.send(err) }
+})
+
+router.get('/donate', (req, res) => {
+  res.render('donate');
+});
+
+router.get('/success', (req, res) => {
+  res.render('success');
+});
+
 
 module.exports = router;
