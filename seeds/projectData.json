@@ -1,38 +1,17 @@
 [
   {
     "name": "Music Near Me",
-    "etype": "Corporate",
     "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
     "needed_funding": 5000
   },
   {
     "name": "The Ultimate Tech Quiz",
-    "etype": "Conference",
     "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
     "needed_funding": 10000
   },
   {
     "name": "Roll 'Em Up",
-    "etype": "Trade Show",
     "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
     "needed_funding": 800
-  }, 
-  {
-    "name": "Headings Are Important",
-    "etype": "Party",
-    "description": "Search engines use the headings to index the structure and content of your web pages. Users often skim a page by its headings. It is important to use headings to show the document structure.",
-    "needed_funding": 4200
-  },
-  {
-    "name": "Bigger Headings",
-    "etype": "Birthday",
-    "description": "Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute, using the CSS font-size property",
-    "needed_funding": 3360
-  },
-  {
-    "name": "Color Values",
-    "etype": "Wedding",
-    "description": "In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.The following three <div> elements have their background color set with RGB, HEX, and HSL values",
-    "needed_funding": 9865
   }
 ]
