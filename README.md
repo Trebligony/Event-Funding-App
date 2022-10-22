@@ -137,7 +137,6 @@ https://events-funding-app.herokuapp.com/
 
 ## References 
 
-https://livedemo00.template-help.com/wt_prod-25530/#
 
 
 https://stripe.com/docs/api/payment_methods
