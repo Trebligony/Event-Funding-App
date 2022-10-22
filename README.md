@@ -84,10 +84,6 @@ Must have a professional README (unique name, description, link to the deployed 
 
 
 
-<img src="./Assets/images/Sign%20in:create%20account.png">
-
-
-
 
 
 <img src="./Assets/images/Recent%20projects.png">
