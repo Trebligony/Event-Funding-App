@@ -1,45 +1,41 @@
-<div class="blog-detail-part paddingub">
-  <div class="container img-box">
-    <div class="detail-part">
-      <div class="comm-form">
-        <h3 class="comm-head-three">Sign in</h3>
-        <form class="form login-form">
-          <div class="row">
-            <div class="col-xs-12 col-sm-5">
-              <input type="text" id="email-login" class="form-control" placeholder="Name*">
-            </div>
-            
-            <div class="col-xs-12 col-sm-5">
-              <input type="password" id="password-login" class="form-control" placeholder="Password*">
-            </div>
-            <div class="col-xs-12 col-sm-2">
-              <a href=""></a><button class="btn submit-comment" type="submit">LOGIN</button></a>
-            </div>
-          </div>
-        </form>
-      </div>
-
-      <div class="blog-sec-line"></div>
-
-      <div class="comm-form">
-        <h3 class="comm-head-three">Create an account</h3>
-        <form class="form signup-form">
-          <div class="row">
-            <div class="col-xs-12 col-sm-3">
-              <input type="text" id="name-signup"  class="form-control" placeholder="Name*">
-            </div>
-            <div class="col-xs-12 col-sm-4">
-              <input type="text" id="email-signup" class="form-control" placeholder="Email*">
-            </div>
-            <div class="col-xs-12 col-sm-3">
-              <input type="password" id="password-signup" class="form-control" placeholder="Password">
-            </div>
-            <div class="col-xs-12 col-sm-2">
-              <a href=""></a><button class="btn submit-comment" type="submit">SUBMIT</button></a>
-            </div>
-          </div>
-        </form>
-      </div>
+<br><br>
+<div class="container col-xl-10 col-xxl-8 px-4 py-3">
+  <div class="row align-items-center g-lg-5 py-2 ">
+    <div class="col-lg-7 text-center text-lg-start">
+      <form class="p-4 p-md-5 border rounded-3 bg-light signup-form">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control"  id="name-signup" placeholder="John Smith" required>
+          <label for="name-signup">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="email-signup" placeholder="name@example.com" required>
+          <label for="email-signup">Email</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="password-signup" placeholder="Password" required>
+          <label for="password-signup">Password</label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Create an account</button>
+      </form>
+    </div>
+    <div class="col-md-10 mx-auto col-lg-5">
+      <form class="p-4 p-md-5 border rounded-3 bg-light login-form">
+        <br><br>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="email-login" placeholder="name@example.com" required>
+          <label for="email-login">Email</label>
+        </div>
+        <div class="form-floating mb-2">
+          <input type="password" class="form-control" id="password-login" placeholder="Password" required>
+          <label for="password-login">Password</label>
+        </div>
+        <div class="checkbox mb-2">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+      </form>
     </div>
   </div>
 </div>

@@ -1,56 +1,53 @@
-<div class="blog-detail-part paddingub">
-  <div class="container img-box">
-    <div class="detail-part">
-      <h2 class="title-two">Welcome, {{name}}</h2>
-      <div class="blog-sec-line"></div>
-      {{#if projects.length}}
-      <div class="comments-part">
-        <h3 class="com-head-three">Current Projects</h3>
-        <div class="about-service  text-center">
-          <div class="container">
-            <div class="row project-list">
-              {{#each projects as |project|}}
+<div class="container px-3 py-3">
+  <h2 class="pb-2 border-bottom text-center">Welcome {{name}}</h2>
+</div>
 
-
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="about-serv-detail">
-                  <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4><br>
-                  <a href="" id="logout"><button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button></a> 
-                </div>
-
-              </div>
-
-              {{/each}}
-            </div>
-          </div>
+<div class="container bg-light col-xl-10 col-xxl-8 px-4 py-3 border rounded-3">
+  <h4 class="pb-2 border-bottom">Create a New Project</h4>
+  <div class="row align-items-center g-lg-5 py-2 ">
+    <div class="col-md-12 mx-auto col-lg-12">
+      <form class="p-4 p-md-4 border rounded-3 bg-white new-project-form">
+        <div class="form-floating mb-3">
+          <input type="text" id="project-name" name="project-name" class="form-control" placeholder="Project Name"
+            required>
+          <label for="project-name">Project Name:</label>
         </div>
+        <div class="form-floating mb-3">
+          <input type="number" id="project-funding" name="project-funding" class="form-control"
+            placeholder="Required funding ($)" required>
+          <label for="project-funding">Required funding ($):</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea id="project-desc" name="project-desc" class="form-control" rows="6" placeholder="Description"
+            required></textarea>
+          <label for="project-desc">Project Description:</label>
+        </div>
+        <button class="btn btn-lg btn-primary" type="submit">Create Project</button>
 
-      </div>
-
-      <div class="blog-sec-line"></div>
-      {{/if}}
-      <div class="comm-form">
-        <h3 class="comm-head-three">Create a New Project</h3>
-        <form class="form new-project-form">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <input type="text" id="project-name" name="project-name" class="form-control" placeholder="Project Name">
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <input type="number" id="project-funding" name="project-funding" class="form-control"
-                placeholder="Needed funding ($)">
-            </div>
-          </div>
-          <div class="form-group">
-            <textarea id="project-desc" name="project-desc" class="form-control" rows="6"
-              placeholder="Description"></textarea>
-          </div>
-          <button class="btn submit-comment" type="submit">CREATE</button>
-        </form>
-      </div>
-
-
+      </form>
     </div>
   </div>
 </div>
+
+<div class="container px-3 py-3">
+  <h2 class="pb-2 border-bottom text-center">Current Projects</h2>
+</div>
+{{#if projects.length}}
+<div class="container py-3">
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center project-list">
+     {{#each projects as |project|}}
+    <div class="col">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3"></div>
+        <div class="card-body">
+          <h5 class="card-title pricing-card-title"><a href="/project/{{project.id}}">{{project.name}}</a></h5><br>
+          <a href="" id="logout"><button class="w-50 btn btn-md btn-primary" data-id="{{project.id}}">DELETE</button></a>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+{{/if}}
+
 <script src="./js/profile.js"></script>

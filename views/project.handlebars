@@ -1,25 +1,29 @@
-<div class="cause-detail pr-100 paddingub">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-10 col-md-10">
-        <h2 class="cause-head-two">{{name}}</h2>
-        <div class="text">
-          <p>{{description}}</p></br>
-        </div>
-        <div class="raised float-left">
-          <h3 class="cause-head-three">Created by <b>{{user.name}} </b>on {{format_date date_created}}</h3>
-        </div>
-        <div class="raised float-right">
-          <h3 class="cause-head-three"><b>Need:</b> <span for="img" aria-label="money">💲{{format_amount needed_funding}}</span></h3>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-2 col-md-2">
-        <div>
-          <a href="/donate" type="submit" class="donate">Fund this Project</a>
-        </div>
-      </div>
-      <div class="bord"></div>
+<br><br><br>
+<div class="container bg-light col-xl-10 col-xxl-8 px-4 py-3 border rounded-3">
+  <div class="row align-items-center g-lg-5 py-2 ">
+    <div class="col-lg-8 text-center text-lg-start">
+      <h3 class="display-6 fw-bold lh-1 mb-3">{{name}}</h3>
+      <p class="col-lg-12 fs-4">{{description}}</p>
+              <div class="form-floating mb-2">
+        <a href="/donate?amount={{needed_funding}}" type="submit"><button class="btn btn-lg btn-primary" type="button">Fund this Project</button></a>
+         </div>
     </div>
-
+    <div class="col-md-10 mx-auto col-lg-4">
+      <form class="p-4 p-md-4 border rounded-3 bg-white">
+        <div class="form-floating mb-2">
+          <input type="text" class="form-control" id="need" disabled value="{{format_amount needed_funding}}">
+          <label for="need">Required fund ($):</label>
+        </div>
+        <div class="form-floating mb-2">
+          <input type="text" class="form-control" id="created" disabled value="{{user.name}}">
+          <label for="created">Created by: </label>
+        </div>
+        <div class="form-floating mb-2">
+          <input type="text" class="form-control" id="created" disabled value="{{format_date date_created}}">
+          <label for="created">Created on: </label>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
+<br><br>
